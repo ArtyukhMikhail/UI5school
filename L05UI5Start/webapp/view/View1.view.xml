@@ -1,0 +1,20 @@
+<mvc:View controllerName="Workspace.L05UI5Start.controller.View1" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="Calculating the factorial">
+					<content>
+						<Toolbar class="sapUiMediumMarginTop" id = 'idToolbar1'> 
+							<Label text = "Input the factorial number:" width = '30%' ></Label>
+							<ToolbarSpacer/>
+							<Input id = 'idInput' type="Number" value = '' ></Input>
+							<MessageStrip id = 'idMessageStrip' text = "Result:" class="sapUiTinyMargin"/>
+						</Toolbar>
+						<Button id = 'idButton1' text = 'Get factorial' press = 'onClickButton1'></Button>
+						<Button id = 'idButton2' text = 'Clear' press = 'onClickButton2'></Button>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
