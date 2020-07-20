@@ -12,9 +12,7 @@ sap.ui.define([
 			var oInput = this.byId("idInput");
 			var oMessageStrip = this.byId("idMessageStrip");
 			
-			 function factorial( n ) {
-				return (n !== 1) ? n * factorial(n - 1) : 1; }
-			//oInput.setValue( factorial(oInput.getValue()) );
+			function factorial( n ) { return (n !== 1) ? n * factorial(n - 1) : 1; }
 			oMessageStrip.setText("Result: " + factorial(oInput.getValue()) );
 		},
 		
